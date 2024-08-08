@@ -39,6 +39,15 @@ html {
   justify-content: center;
   align-items: center;
   max-width: 1000px;
+  position: relative;
+  left: -200px;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.main__layout--active {
+  left: 0%;
+  opacity: 1;
 }
 
 .main__photo {
@@ -126,6 +135,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  z-index: 99;
 }
 
 .bar__item {
@@ -190,6 +200,18 @@ html {
   align-items: center;
   max-width: 1000px;
   gap: 4rem;
+}
+
+.about__layout {
+  position: relative;
+  left: -200px;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.about__layout--active {
+  left: 0%;
+  opacity: 1;
 }
 
 .about__section,

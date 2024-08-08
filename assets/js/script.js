@@ -16,14 +16,20 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         if (entry.target.id === "main-layout") {
+          mainLayout.classList.add("main__layout--active");
+          aboutLayout.classList.remove("about__layout--active");
           barHome.classList.add("bar__item--active");
           barAbout.classList.remove("bar__item--active");
           barPortfolio.classList.remove("bar__item--active");
         } else if (entry.target.id === "about-layout") {
+          aboutLayout.classList.add("about__layout--active");
+         
           barAbout.classList.add("bar__item--active");
           barHome.classList.remove("bar__item--active");
           barPortfolio.classList.remove("bar__item--active");
         } else if (entry.target.id === "portfolio-layout") {
+          aboutLayout.classList.remove("about__layout--active");
+         
           barAbout.classList.remove("bar__item--active");
           barHome.classList.remove("bar__item--active");
           barPortfolio.classList.add("bar__item--active");
