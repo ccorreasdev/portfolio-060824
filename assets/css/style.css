@@ -42,7 +42,7 @@ html {
   position: relative;
   left: -200px;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .main__layout--active {
@@ -206,7 +206,7 @@ html {
   position: relative;
   left: -200px;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .about__layout--active {
@@ -370,6 +370,22 @@ html {
 .exp__svg {
   width: 20px;
   height: 20px;
+}
+
+.portfolio__layout {
+  position: relative;
+  left: -200px;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.portfolio__layout--active {
+  left: 0%;
+  opacity: 1;
+}
+
+.portfolio__section {
+  text-align: center;
 }
 
 .project__container {
